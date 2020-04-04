@@ -177,6 +177,8 @@ return [
         Laravel\Socialite\SocialiteServiceProvider::class,
         TCG\Voyager\VoyagerServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
+        DevDojo\Chatter\ChatterServiceProvider::class,
+
     ],
 
     /*
