@@ -21,7 +21,7 @@ class SocialController extends Controller
     public function callback()
     {            
         
-        $getInfo = Socialite::driver('google')->user();
+        $getInfo = Socialite::driver('google')->stateless()->user();
      
         $user = $this->createUser($getInfo,'google');
      
@@ -42,7 +42,7 @@ class SocialController extends Controller
                 'email'    => $getInfo->email,
                 'provider' => 'google',
                 'provider_id' => $getInfo->id,
-                // 'avatar'   => $getInfo->,
+                'avatar'   => 'https://people.googleapis.com/v1/people/me'
             ]);
         }
         return $user;

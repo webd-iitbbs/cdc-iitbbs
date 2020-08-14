@@ -30,53 +30,23 @@ class RegisterController extends Controller
         
         $result= DB::table('placements')->where('id',$id)->value('company_name');
 
-        $profile=DB::table('placements')->where('id',$id)->value('profile');
+        DB::update("UPDATE `fourthyear` SET `$result` = '1'");
+        
+        echo "Registered successfully";
 
-        return view('register1')->with('result',$result)
-                                ->with('id' ,$id)
-                                ->with('profile' ,$profile);
-	}
-
-    public function placement2()
-    {   
-        $id = $_GET['id'];
-
-        $table = DB::table('placements')->where('id',$id)->value('company_name');
-
-        $table = strtolower($table);
-
-        $data = DB::getSchemaBuilder()->getColumnListing("$table");
-
-        return view('register2')->with('data', $data)
-                                ->with('id', $id)
-                                ->with('table', $table);
+        header("refresh:2, url=/placement");
     }
 
-    public function placementf()
-    {
-        $company_id = $_GET['company_id'];
-
-        $table = DB::table('placements')->where('id',$company_id)->value('company_name');
-
-        $table = strtolower($table);
-
-        $data = DB::getSchemaBuilder()->getColumnListing("$table");
-
-        $s = 'registered successfully';
-
-        $insertValues = [];
-        foreach($data as $key => $columnName){ 
-          $insertValues[$key] = $_GET[$columnName];
-        }
-
-
-        $columns = [];
-        foreach($data as $key => $data){ 
-          $columns[$key] = $data;
-        }
-        DB::table($table)
-           ->insert(['$columns' => $insertValues,]);
+    public function internship()
+    {   
+        $id = $_GET['id'];
         
-        echo "$s";
+        $result= DB::table('internships')->where('id',$id)->value('company_name');
+
+        DB::update("UPDATE `thirdyear` SET `$result` = '1'");
+
+        echo "Registered successfully";
+
+        header("refresh:2, url=/internship");
     }
 }

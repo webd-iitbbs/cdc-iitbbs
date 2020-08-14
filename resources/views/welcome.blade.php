@@ -70,11 +70,8 @@
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
+                    <a href="{{ url('/redirect') }}" class="btn "><i class="fa fa-google" aria-hidden="true"></i> &nbsp; Login With Google</a>
+                        
                     @endauth
                 </div>
             @endif
