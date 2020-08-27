@@ -12,6 +12,7 @@
     <script src="{{ asset('js/app.js') }}"  ></script>
 
     <!-- Fonts -->
+    <link rel="shortcut icon" href="{{ URL::to('/') }}/images/favicon.ico">
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,7 +22,12 @@
     @yield('css')
 </head>
 <body>
-    <div id="app">
+    <div id="app" style="background:white;">
+        <div class="container ">
+            <div class="header d-lg-flex justify-content-between align-items-center py-3 px-sm-3">
+                <img class="img-fluid" src="{{ URL::to('/') }}/images/header2.png">
+            </div>
+	    </div>
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">

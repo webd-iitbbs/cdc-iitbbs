@@ -177,7 +177,7 @@ a {
 
 a:hover {
   color: #1d68a7;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:not([href]) {
@@ -10893,6 +10893,7 @@ a.text-dark:focus {
 .bor{
   border: 1px solid black;
   margin: 30px 120px 30px 120px;
+  padding:10px;
 
 }
 .cen{
