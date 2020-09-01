@@ -204,7 +204,7 @@ if(isset($_POST['contact'])){
     $password = "";
     $database = "laravel";
 	$conn = new mysqli($servername, $username, $password,$database);
-	$query = "INSERT INTO contactform (name, email, subject, message) VALUES ('".$_POST['name']."', '".$_POST['email']."', '".$_POST['subject']."', '".$_POST['message']."') ";
+	$query = "INSERT INTO contactforms (name, email, subject, message) VALUES ('".$_POST['name']."', '".$_POST['email']."', '".$_POST['subject']."', '".$_POST['message']."') ";
             if(mysqli_query($conn, $query)){
                  echo '<script type="text/javascript">alert("Image uploaded successfully ")</script>';
             }
