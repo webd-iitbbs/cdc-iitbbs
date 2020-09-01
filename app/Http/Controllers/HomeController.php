@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Schema;
 
 class HomeController extends Controller
 {
+
     /**
      * Create a new controller instance.
      *
@@ -107,7 +108,9 @@ class HomeController extends Controller
             ['name' => Auth::user()->name, 'email' => Auth::user()->email, 'roll' => $roll, 'phone' => $phone ]
         ]);
 
-        echo "$s";
-        header("refresh:2, url=/user/profile");
+        echo "<script> alert('updated successfully') </script>";
+        header("url= /user/profile");
     }
+
+
 }

@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Schema;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,6 +18,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::post('/', function(Request $request){
+    DB::table('contactforms')->insert([
+        ['name' => $request['name'], 'email' => $request['email'], 'subject' => $request['subject'], 'message' => $request['message'] ]
+    ]);
+    echo '<script type="text/javascript">alert("Message sent successfully ")</script>';
+    return view('welcome');
+});
+
 
 Auth::routes();
 Route::get('/redirect', 'SocialController@redirect')->name('social');

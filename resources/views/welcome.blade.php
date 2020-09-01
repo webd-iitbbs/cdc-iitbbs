@@ -5,6 +5,8 @@
 	<title>Career Development Cell : IIT Bhubaneswar : Home</title>
 	<!-- Meta tag Keywords -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="csrf-token" content="{{ csrf_token() }}">
+
 	<meta charset="UTF-8" />
 	<script>
 		addEventListener("load", function () {
@@ -16,7 +18,7 @@
 		}
 	</script>
 	<!-- //Meta tag Keywords -->
-
+	<link rel="shortcut icon" href="{{ URL::to('/') }}/images/favicon.ico">
 	<!-- Custom-Files -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<!-- Bootstrap-Core-CSS -->
@@ -172,6 +174,7 @@
 
         <div class="form-sec">
           <form action="" method="post" role="form" class="contactForm">
+		  @csrf
             <div class="form-row">
 	            <div class="col-md-4 form-group">
 	              <input type="text" name="name" class="form-control contact-form text-field-box" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -197,23 +200,6 @@
       </div>
     </div>
   </div>
-<?php
-if(isset($_POST['contact'])){
-	$servername = "localhost";
-    $username = "root";
-    $password = "";
-    $database = "laravel";
-	$conn = new mysqli($servername, $username, $password,$database);
-	$query = "INSERT INTO contactforms (name, email, subject, message) VALUES ('".$_POST['name']."', '".$_POST['email']."', '".$_POST['subject']."', '".$_POST['message']."') ";
-            if(mysqli_query($conn, $query)){
-                 echo '<script type="text/javascript">alert("Image uploaded successfully ")</script>';
-            }
-            else{
-                  echo '<script type="text/javascript">alert("There is a problem submitting. Please try again later")</script>'; 
-            }
-}	
-
-?>
 	<!--contactus-->
 
 	<!-- slideshow -->
