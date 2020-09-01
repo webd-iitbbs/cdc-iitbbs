@@ -171,7 +171,7 @@
         <div id="errormessage"></div>
 
         <div class="form-sec">
-          <form action="mail to :bds15@iitbbs.ac.in" method="post" role="form" class="contactForm">
+          <form action="" method="post" role="form" class="contactForm">
             <div class="form-row">
 	            <div class="col-md-4 form-group">
 	              <input type="text" name="name" class="form-control contact-form text-field-box" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -197,7 +197,23 @@
       </div>
     </div>
   </div>
+<?php
+if(isset($_POST['contact'])){
+	$servername = "localhost";
+    $username = "root";
+    $password = "";
+    $database = "laravel";
+	$conn = new mysqli($servername, $username, $password,$database);
+	$query = "INSERT INTO contactform (name, email, subject, message) VALUES ('".$_POST['name']."', '".$_POST['email']."', '".$_POST['subject']."', '".$_POST['message']."') ";
+            if(mysqli_query($conn, $query)){
+                 echo '<script type="text/javascript">alert("Image uploaded successfully ")</script>';
+            }
+            else{
+                  echo '<script type="text/javascript">alert("There is a problem submitting. Please try again later")</script>'; 
+            }
+}	
 
+?>
 	<!--contactus-->
 
 	<!-- slideshow -->
