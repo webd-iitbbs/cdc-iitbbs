@@ -1,13 +1,17 @@
-clone the repository
+#clone the repository
 
-install vendor files
+Make sure you have composer and xampp om your pc
 
-composer install
+#install vendor files
+<code>composer intsall</code>
 
-import all the migrations 
+#import the database
+Check .sql file in the code and import into your phpmyadmin
 
-import laravel.sql 
+#generate keys
+<code>php artisan key:generate</code>
 
-serve the files 
+#serve the files 
+<code>php artisan serve</code>
 
-php artisan serve
+Site will be served at http://localhost:8000/
