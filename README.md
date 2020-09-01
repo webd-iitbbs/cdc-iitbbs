@@ -1,6 +1,6 @@
 #clone the repository
 
-Make sure you have composer and xampp om your pc
+Make sure you have composer and xampp on your pc
 
 #install vendor files
 <code>composer intsall</code>
