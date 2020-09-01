@@ -44,7 +44,7 @@
 <body>
 	<!-- main banner -->
 	<div class="main-top" id="home">
-			<!-- main banner -->
+		<!-- main banner -->
 	<div class="main-top" id="home">
 		<!-- header -->
 		<header>
@@ -62,19 +62,18 @@
 							<input type="checkbox" id="drop" />
 							<ul class="menu">
 								<li><a href="/">Home</a></li>
-								<li><a href="pandp.html" class="active">Procedure & Policy</a></li>
-								<li><a href="facilities.html">Facilities</a></li>
-								<li><a href="hop.html">Highlights of Placement</a></li>
-								<li><a href="fcoordinators.html">Faculty Coordinators</a></li>
-								<li><a href="scoordinators.html">Student Coordinators</a></li>								
+								<li><a href="pandp.php">Procedure & Policy</a></li>
+								<li><a href="facilities.php">Facilities</a></li>
+								<li><a href="hop.php" class="active">Highlights of Placement</a></li>
+								<li><a href="fcoordinators.php">Faculty Coordinators</a></li>
+								<li><a href="scoordinators.php">Student Coordinators</a></li>								
 								<li><a href="http://www.iitbbs.ac.in/">About Campus</a></li>
 								<li><a href="http://www.iitbbs.ac.in/cdc/doc/IIT%20BBSR%20Placement%20Brochure%202019-20%20updated-final.pdf" class="drop-text" target="_blank">Placement Brochure</a></li>
-								<li><a href="gallery.html">Gallery</a></li>
+								<li><a href="gallery.php">Gallery</a></li>
 								<li><a href="/redirect">Log in</a></li>
 							</ul>
 						</nav>
 					</div>
-					<!-- //nav -->
 				</div>
 			</div>
 		</header>
@@ -85,43 +84,83 @@
 
 		<!-- banner -->
 		<div class="banner_w3lspvt-2"><br>
-			<ol class="breadcrumb" style="background-color: white;">
-				<li class="breadcrumb-item"><a href="index.html" class="font-weight-bold">Home</a></li>
-				<li class="breadcrumb-item" aria-current="page">Procedure and Policy</li>
+			<ol class="breadcrumb"  style="background-color: white;">
+				<li class="breadcrumb-item"><a href="/" class="font-weight-bold">Home</a></li>
+				<li class="breadcrumb-item" aria-current="page">Highlights of Placement</li>
 			</ol><br>
 		</div>
 		<!-- //banner -->
 	</div>
 	<!-- //main banner -->
 
-	<!-- content -->
-	<div class="container" style="line-height: 2;">
+	<!-- content-->
+	<div class="container">
 		<div class="page-title text-center">
-          <h2>Procedure and Policy</h2>
+          <h2>Highlights of Placements 2018</h2>
           <hr class="pg-titl-bdr-btm"></hr>
 	    </div>
-		<ol style="list-style-type: lower-roman;">
-			<li>The Placement Cell, which includes the Professor-In-Charge (PIC), faculty coordinators and student representatives, sends invitation to the companies/organizations along with the relevant information.</li>
-			<li>The interested recruiters fill a Job Notification Form (JNF) containing all the required details about the placement using their online account. They may also send the required information to the PIC at his email address or through post at the Placement office.</li>
-			<li>Any recruiter interested in delivering a Pre-Placement Talk (PPT) may send the request to the PIC along with the relevant details.</li>
-			<li>The JNF is made available to the students online as well as through the notice-boards along with the relevant details.</li>
-			<li>Interested students may apply for the recruitment process of a company to the PIC through online or written applications.</li>
-			<li>The Placement cell, in consultation with the company, allots a particular date to the company for the campus interviews.</li>
-			<li>Companies can go through the resumes of the interested students to shortlist the students depending upon the availability of the opportunities using their online accounts.</li>
-			<li>The recruiters visit the campus at the allotted date(s) to conduct the test(s) and/or interview(s) as per the recruitment process.</li>
-			<li>The recruiters are required to declare the final list of the selected students on the date of interview(s).</li>
-		</ol>
-		<hr>
-		<h4>IMPORTANT NOTE:</h4>
-		<p>The placement cell maintains a complete database of all the students selected by the companies. A student once selected may or may not be allowed to appear in another interview(s) depending upon the placement policy of the Institute. The placement cell reserves the right to amend the placement policy of the Institute, if required.</p>
-	</div><br><br>
+		<ul >
+		    <li>
+		    <p><strong>Key highlights</strong></p>
+		    <ul>
+					<li>Total 130 students from UG received offers.</li>
+        <li>Undergraduate placement recorded 86 at the close of placement season.</li>
+        <li>Highest domestic CTC offered was 39 Lakhs per annum.</li>
+        <li>60% of the M Tech batch have been placed with core and other sectors.</li>
+        <li>M. Sc students from basic sciences was near 100% placements.</li>
+        <li>Highest number of job offers have been received from core industries.</li>
+        <li>Around 55 companies have visited during the campus placements season.</li>
+        <li>Average salary is 11.15 Lakh per Annum.</li>
+        <li>PSU&rsquo;s like ISRO, IOCL, HPCL, NCCBM participated in the campus placements.</li>
+        <li>MNC companies like Goldman Sachs, Renault Nissan, Samsung R &amp; D, Oracle, Infosys, TCS R &amp; D, Adobe have participated in this year of placements.</li>
+		</ul>
+		<br>
+		<br>
+			<p><strong>Course/stream  wise distribution of placement: 2017-18</strong></p>
+		<table class="table table-bordered" border="0" cellspacing="0" cellpadding="0">
+		    <thead>
+		        <tr>
+		            <th width="128" valign="top"><strong>Branch(B.Tech)</strong></th>
+		            <th width="161" valign="top"><strong>Placement Percentage </strong></th>
+		        </tr>
+		    </thead>
+		    <tbody>
+		        <tr>
+		            <td width="128" valign="top">Civil  Engineering</td>
+		            <td width="161" valign="top">62</td>
+		        </tr>
+		        <tr>
+		            <td width="128" valign="top">Computer  Science &amp; Engineering</td>
+		            <td width="161" valign="top">100</td>
+		        </tr>
+		        <tr>
+		            <td width="128" valign="top">Electrical  Engineering</td>
+		            <td width="161" valign="top">83</td>
+		        </tr>
+		        <tr>
+		            <td width="128" valign="top">Mechanical  Engineering91</td>
+		            <td width="161" valign="top">91</td>
+		        </tr>
+		        <tr>
+		            <td width="128" valign="top">Metallurgical  and Materials Engineering</td>
+		            <td width="161" valign="top">88</td>
+		        </tr>
+		    </tbody>
+		</table>
+
+
+		<a href="hop17.php" class="btn btn-success btn-md" style="color:#fff;">Highlights of Placement 2017</a> <a href="hop19.php" class="btn btn-success btn-md" style="color:#fff;">Highlights of Placement 2019</a> <a href="hop.php" class="btn btn-success btn-md" style="color:#fff;">Highlights of Placement 2020</a></div>
+	</div>
+<br>
+<br>
+
 	<!-- //content -->
-	
-	<!-- slideshow -->
+<!-- slideshow -->
 	<div class="page-title text-center">
       <h2>Top Recruiters</h2>
       <hr class="pg-titl-bdr-btm"></hr>
     </div>
+
 	<div class="container slider align-items-center">
 	  <div class="align-self-center mb-5" style="padding-right:10px;">
 	  	<img class="img-fluid align-self-center" style="max-width:100%; width:auto; height:120px; padding:0; margin:auto; width: 200px;" src="images/adobe.png" width="200px">

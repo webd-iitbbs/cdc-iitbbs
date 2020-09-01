@@ -62,14 +62,14 @@
 							<input type="checkbox" id="drop" />
 							<ul class="menu">
 								<li><a href="/">Home</a></li>
-								<li><a href="pandp.html">Procedure & Policy</a></li>
-								<li><a href="facilities.html">Facilities</a></li>
-								<li><a href="hop.html" class="active">Highlights of Placement</a></li>
-								<li><a href="fcoordinators.html">Faculty Coordinators</a></li>
-								<li><a href="scoordinators.html">Student Coordinators</a></li>								
+								<li><a href="pandp.php">Procedure & Policy</a></li>
+								<li><a href="facilities.php">Facilities</a></li>
+								<li><a href="hop.php" class="active">Highlights of Placement</a></li>
+								<li><a href="fcoordinators.php">Faculty Coordinators</a></li>
+								<li><a href="scoordinators.php">Student Coordinators</a></li>								
 								<li><a href="http://www.iitbbs.ac.in/">About Campus</a></li>
 								<li><a href="http://www.iitbbs.ac.in/cdc/doc/IIT%20BBSR%20Placement%20Brochure%202019-20%20updated-final.pdf" class="drop-text" target="_blank">Placement Brochure</a></li>
-								<li><a href="gallery.html">Gallery</a></li>
+								<li><a href="gallery.php">Gallery</a></li>
 								<li><a href="/redirect">Log in</a></li>
 							</ul>
 						</nav>
@@ -85,7 +85,7 @@
 		<!-- banner -->
 		<div class="banner_w3lspvt-2"><br>
 			<ol class="breadcrumb"  style="background-color: white;">
-				<li class="breadcrumb-item"><a href="index.html" class="font-weight-bold">Home</a></li>
+				<li class="breadcrumb-item"><a href="/" class="font-weight-bold">Home</a></li>
 				<li class="breadcrumb-item" aria-current="page">Highlights of Placement</li>
 			</ol><br>
 		</div>
@@ -94,62 +94,59 @@
 	<!-- //main banner -->
 
 	<!-- content-->
+
 	<div class="container">
 		<div class="page-title text-center">
-          <h2>Highlights of Placements 2018</h2>
+          <h2>Highlights of Placements 2017</h2>
           <hr class="pg-titl-bdr-btm"></hr>
 	    </div>
-		<ul >
+		<ul>
 		    <li>
 		    <p><strong>Key highlights</strong></p>
 		    <ul>
-					<li>Total 130 students from UG received offers.</li>
-        <li>Undergraduate placement recorded 86 at the close of placement season.</li>
-        <li>Highest domestic CTC offered was 39 Lakhs per annum.</li>
-        <li>60% of the M Tech batch have been placed with core and other sectors.</li>
-        <li>M. Sc students from basic sciences was near 100% placements.</li>
-        <li>Highest number of job offers have been received from core industries.</li>
-        <li>Around 55 companies have visited during the campus placements season.</li>
-        <li>Average salary is 11.15 Lakh per Annum.</li>
-        <li>PSU&rsquo;s like ISRO, IOCL, HPCL, NCCBM participated in the campus placements.</li>
-        <li>MNC companies like Goldman Sachs, Renault Nissan, Samsung R &amp; D, Oracle, Infosys, TCS R &amp; D, Adobe have participated in this year of placements.</li>
+					<li>Total 104 students from UG received offers from reputed organizations.</li>
+        <li>Undergraduate placement is about 85%</li>
+        <li>M Tech placements are close to 78%</li>
+        <li>Highest number of job offers are from core industries.</li>
+        <li>41 number of companies visited campus during the placement season.</li>
+        <li>Highest foreign CTC offered was 38 Lakhs in Rupees.</li>
+        <li>Highest domestic CTC offered was 21 Lakhs in Rupees.</li>
+        <li>Average salary is 10 Lakh per Annum.</li>
+        <li>PSU&rsquo;s like ISRO, IOCL, BPCL, NCCBM participated in the campus placement.</li>
 		</ul>
 		<br>
 		<br>
-			<p><strong>Course/stream  wise distribution of placement: 2017-18</strong></p>
+		<p><strong>Course/stream wise distribution of placement: 2016-17</strong></p>
+		<!-- <p><strong>Key highlights</strong></p> -->
 		<table class="table table-bordered" border="0" cellspacing="0" cellpadding="0">
-		    <thead>
-		        <tr>
-		            <th width="128" valign="top"><strong>Branch(B.Tech)</strong></th>
-		            <th width="161" valign="top"><strong>Placement Percentage </strong></th>
-		        </tr>
-		    </thead>
-		    <tbody>
-		        <tr>
-		            <td width="128" valign="top">Civil  Engineering</td>
-		            <td width="161" valign="top">62</td>
-		        </tr>
-		        <tr>
-		            <td width="128" valign="top">Computer  Science &amp; Engineering</td>
-		            <td width="161" valign="top">100</td>
-		        </tr>
-		        <tr>
-		            <td width="128" valign="top">Electrical  Engineering</td>
-		            <td width="161" valign="top">83</td>
-		        </tr>
-		        <tr>
-		            <td width="128" valign="top">Mechanical  Engineering91</td>
-		            <td width="161" valign="top">91</td>
-		        </tr>
-		        <tr>
-		            <td width="128" valign="top">Metallurgical  and Materials Engineering</td>
-		            <td width="161" valign="top">88</td>
-		        </tr>
-		    </tbody>
+		<thead>
+				<tr>
+						<th width="128" valign="top"><strong>Branch(B.Tech)</strong></th>
+						<th width="161" valign="top"><strong>Placement Percentage </strong></th>
+				</tr>
+		</thead>
+		<tbody>
+				<tr>
+						<td width="128" valign="top">Civil  Engineering</td>
+						<td width="161" valign="top">52</td>
+				</tr>
+				<tr>
+						<td width="128" valign="top">Computer  Science &amp; Engineering</td>
+						<td width="161" valign="top">97</td>
+				</tr>
+				<tr>
+						<td width="128" valign="top">Electrical  Engineering</td>
+						<td width="161" valign="top">91</td>
+				</tr>
+				<tr>
+						<td width="128" valign="top">Mechanical  Engineering</td>
+						<td width="161" valign="top">83</td>
+				</tr>
+		</tbody>
 		</table>
 
 
-		<a href="hop17.html" class="btn btn-success btn-md" style="color:#fff;">Highlights of Placement 2017</a> <a href="hop19.html" class="btn btn-success btn-md" style="color:#fff;">Highlights of Placement 2019</a> <a href="hop.html" class="btn btn-success btn-md" style="color:#fff;">Highlights of Placement 2020</a></div>
+		<a href="hop18.php" class="btn btn-success btn-md" style="color:#fff;">Highlights of Placement 2018</a> <a href="hop19.php" class="btn btn-success btn-md" style="color:#fff;">Highlights of Placement 2019</a> <a href="hop.php" class="btn btn-success btn-md" style="color:#fff;">Highlights of Placement 2020</a></div>
 	</div>
 <br>
 <br>

@@ -44,7 +44,7 @@
 <body>
 	<!-- main banner -->
 	<div class="main-top" id="home">
-			<!-- main banner -->
+		<!-- main banner -->
 	<div class="main-top" id="home">
 		<!-- header -->
 		<header>
@@ -62,19 +62,18 @@
 							<input type="checkbox" id="drop" />
 							<ul class="menu">
 								<li><a href="/">Home</a></li>
-								<li><a href="pandp.html">Procedure & Policy</a></li>
-								<li><a href="facilities.html" class="active">Facilities</a></li>
-								<li><a href="hop.html">Highlights of Placement</a></li>
-								<li><a href="fcoordinators.html">Faculty Coordinators</a></li>
-								<li><a href="scoordinators.html">Student Coordinators</a></li>								
+								<li><a href="pandp.php">Procedure & Policy</a></li>
+								<li><a href="facilities.php">Facilities</a></li>
+								<li><a href="hop.php" class="active">Highlights of Placement</a></li>
+								<li><a href="fcoordinators.php">Faculty Coordinators</a></li>
+								<li><a href="scoordinators.php">Student Coordinators</a></li>								
 								<li><a href="http://www.iitbbs.ac.in/">About Campus</a></li>
 								<li><a href="http://www.iitbbs.ac.in/cdc/doc/IIT%20BBSR%20Placement%20Brochure%202019-20%20updated-final.pdf" class="drop-text" target="_blank">Placement Brochure</a></li>
-								<li><a href="gallery.html">Gallery</a></li>
+								<li><a href="gallery.php">Gallery</a></li>
 								<li><a href="/redirect">Log in</a></li>
 							</ul>
 						</nav>
 					</div>
-					<!-- //nav -->
 				</div>
 			</div>
 		</header>
@@ -85,34 +84,80 @@
 
 		<!-- banner -->
 		<div class="banner_w3lspvt-2"><br>
-			<ol class="breadcrumb" style="background-color: white;">
-				<li class="breadcrumb-item"><a href="index.html" class="font-weight-bold">Home</a></li>
-				<li class="breadcrumb-item" aria-current="page">Facilities</li>
+			<ol class="breadcrumb"  style="background-color: white;">
+				<li class="breadcrumb-item"><a href="/" class="font-weight-bold">Home</a></li>
+				<li class="breadcrumb-item" aria-current="page">Highlights of Placement</li>
 			</ol><br>
 		</div>
 		<!-- //banner -->
 	</div>
 	<!-- //main banner -->
 
-	<!-- content -->
-	<div class="container" style="line-height: 2;">
+	<!-- content-->
+
+	<div class="container">
 		<div class="page-title text-center">
-          <h2>Facilities for recruiters</h2>
+          <h2>Highlights of Placements 2019</h2>
           <hr class="pg-titl-bdr-btm"></hr>
 	    </div>
-		<ul>
-		<li>The Recruiters are provided with all the required facilities for the placement process as mentioned below.</li>
+		<ul >
+		    <li>
+		    <p><strong>Key highlights</strong></p>
+		    <ul>
+					<li>Total 120 students from UG received offers.</li>
+			<li>Undergraduate placement recorded 89.55% at the close of placement season.</li>
+			<li>Highest domestic CTC offered was 39 Lakhs per annum.</li>
+			<li>68% of the M Tech batch have been placed with core and other sectors.</li>
+			<li>Highest number of job offers have been received from core industries.</li>
+			<li>Around 89 companies have visited during the campus placements season.</li>
+			<li>Average salary is 11.44 Lakh per Annum.</li>
+			<li>PSU&rsquo;s like ISRO, IOCL,NCCBM participated in the campus placements.</li>
+			<li>3rd year students have received internship offers in reputed industries. A few of them are engaged in Internships in R &amp; D organisations and foreign universities.</li>
+		    </li>
 		</ul>
-		<ol style="list-style-type: lower-roman;">
-			<li>The placement office is fully furnished, air conditioned and equipped with computer and internet facilities.</li>
-			<li>Any recruiter interested in delivering a Pre-Placement Talk is provided with an auditorium having a capacity of 200 and other required facilities, if any.</li>
-			<li>Fully furnished, air conditioned rooms for group discussion and personal interviews.</li>
-			<li>Video conferencing facilities are available if necessary.</li>
-		</ol>
-	</div><br><br>
+		<br>
+		<br>
+			<p><strong>Course/stream wise distribution of placement: 2018-19</strong></p>
+		<table class="table table-bordered" border="0" cellspacing="0" cellpadding="0">
+		    <thead>
+		        <tr>
+		            <th width="128" valign="top"><strong>Branch(B.Tech)</strong></th>
+		            <th width="161" valign="top"><strong>Placement Percentage </strong></th>
+		        </tr>
+		    </thead>
+		    <tbody>
+		        <tr>
+		            <td width="128" valign="top">Civil  Engineering</td>
+		            <td width="161" valign="top">89</td>
+		        </tr>
+		        <tr>
+		            <td width="128" valign="top">Computer  Science &amp; Engineering</td>
+		            <td width="161" valign="top">100</td>
+		        </tr>
+		        <tr>
+		            <td width="128" valign="top">Electrical  Engineering</td>
+		            <td width="161" valign="top">86</td>
+		        </tr>
+		        <tr>
+		            <td width="128" valign="top">Mechanical  Engineering</td>
+		            <td width="161" valign="top">83</td>
+		        </tr>
+		        <tr>
+		            <td width="128" valign="top">Metallurgical  and Materials Engineering</td>
+		            <td width="161" valign="top">90</td>
+		        </tr>
+		    </tbody>
+		</table>
+
+
+		<a href="hop17.php" class="btn btn-success btn-md" style="color:#fff;">Highlights of Placement 2017</a> <a href="hop18.php" class="btn btn-success btn-md" style="color:#fff;">Highlights of Placement 2018</a> <a href="hop.php" class="btn btn-success btn-md" style="color:#fff;">Highlights of Placement 2020</a></div>
+	</div>
+<br>
+<br>
+
+
 	<!-- //content -->
-	
-	<!-- slideshow -->
+<!-- slideshow -->
 	<div class="page-title text-center">
       <h2>Top Recruiters</h2>
       <hr class="pg-titl-bdr-btm"></hr>
