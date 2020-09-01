@@ -32,9 +32,19 @@ class HomeController extends Controller
         return view('home',['data'=>$data]);
     }
 
-    public function internship()
+    public function internship(Request $request)
     {
-        $data = \DB::select('select * from internships');
+        
+        if($request->has('sort')&& $request->has('dir')){
+            $sortby = $request['sort'];
+            $sortdir = $request['dir'];
+        }
+        else {
+            $sortby = 'created_at';
+            $sortdir = 'Desc';
+        }
+
+        $data = DB::table('internships')->orderBy($sortby, $sortdir)->get();
 
         $year = substr(Auth::user()->roll, 0, 2);
 
@@ -42,9 +52,18 @@ class HomeController extends Controller
 
         else return view ('noaccess');        
     }
-    public function placement()
+    public function placement(Request $request)
     {
-        $data = \DB::select('select * from placements');
+        if($request->has('sort')&& $request->has('dir')){
+            $sortby = $request['sort'];
+            $sortdir = $request['dir'];
+        }
+        else {
+            $sortby = 'created_at';
+            $sortdir = 'Desc';
+        }
+
+        $data = DB::table('placements')->orderBy($sortby, $sortdir)->get();
 
         $year = substr(Auth::user()->roll, 0, 2);
 

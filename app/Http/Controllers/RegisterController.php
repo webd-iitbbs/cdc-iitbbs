@@ -32,9 +32,9 @@ class RegisterController extends Controller
 
         DB::update("UPDATE `fourthyear` SET `$result` = '1'");
         
-        echo "Registered successfully";
+        echo "<script> alert('Registered successfully'); </script>";
 
-        header("refresh:2, url=/placement");
+        header("url=/placement");
     }
 
     public function internship()
@@ -45,8 +45,8 @@ class RegisterController extends Controller
 
         DB::update("UPDATE `thirdyear` SET `$result` = '1'");
 
-        echo "Registered successfully";
+        echo "<script> alert('Registered successfully'); </script>";
 
-        header("refresh:2, url=/internship");
+        header("url=/internship");
     }
 }

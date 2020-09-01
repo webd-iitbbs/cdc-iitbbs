@@ -1,6 +1,21 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="container dropdown" style="display:block;">
+  <button class="btn dropdown-toggle" style="display:block;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Sort By
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="/placement?sort=company_name&dir=Asc">Company Name: A to Z</a>
+    <a class="dropdown-item" href="/placement?sort=company_name&dir=Desc">Company Name: Z to A</a>
+    <a class="dropdown-item" href="/placement?sort=deadline&dir=Asc">Deadline: latest to oldest</a>
+    <a class="dropdown-item" href="/placement?sort=deadline&dir=Desc">Deadline: oldest to latest</a>
+    <a class="dropdown-item" href="/placement?sort=examdate&dir=Asc">Exam Date: latest to oldest</a>
+    <a class="dropdown-item" href="/placement?sort=examdate&dir=Desc">Exam Date: oldest to latest</a>
+    <a class="dropdown-item" href="/placement?sort=CTC&dir=Asc">CTC: highest to lowest</a>
+    <a class="dropdown-item" href="/placement?sort=CTC&dir=Desc">CTC: lowest to highest</a>
+  </div>
+</div>
 <div class="container-fluid">
     <div class="row justify-content-center">
         @foreach(array_reverse($data) as $data)

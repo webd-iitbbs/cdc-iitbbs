@@ -39,12 +39,81 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<!--bootstrap cdn-->
+	<style>
+	/* Slideshow container */
+	.slideshow-container {
+	  max-width: 1000px;
+	  position: relative;
+	  margin: auto;
+	}
+
+	/* Caption text */
+	.text {
+	  color: #f2f2f2;
+	  font-size: 15px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  bottom: 8px;
+	  width: 100%;
+	  text-align: center;
+	}
+
+	/* Number text (1/3 etc) */
+	.numbertext {
+	  color: #f2f2f2;
+	  font-size: 12px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  top: 0;
+	}
+
+	/* The dots/bullets/indicators */
+	.dot {
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+		border-color: black;
+		border: 1px solid black;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+
+	.active{
+	  background-color: #f8f9fa;
+	}
+
+	/* Fading animation */
+	.fade {
+	  -webkit-animation-name: fade;
+	  -webkit-animation-duration: 4s;
+	  animation-name:fade;
+	  animation-duration: 4s;
+	}
+
+	@-webkit-keyframes fade {
+	  from {opacity: .4}
+	  to {opacity: 1}
+	}
+
+	@keyframes fade {
+	  from {opacity: .4}
+	  to {opacity: 1}
+	}
+
+	/* On smaller screens, decrease text size */
+	@media only screen and (max-width: 300px) {
+	  .text {font-size: 11px}
+	}
+
+	</style>
 </head>
 
 <body>
 	<!-- main banner -->
 	<div class="main-top" id="home">
-		<!-- main banner -->
+			<!-- main banner -->
 	<div class="main-top" id="home">
 		<!-- header -->
 		<header>
@@ -65,15 +134,16 @@
 								<li><a href="pandp.html">Procedure & Policy</a></li>
 								<li><a href="facilities.html">Facilities</a></li>
 								<li><a href="hop.html">Highlights of Placement</a></li>
-								<li><a href="fcoordinators.html" class="active">Faculty Coordinators</a></li>
+								<li><a href="fcoordinators.html">Faculty Coordinators</a></li>
 								<li><a href="scoordinators.html">Student Coordinators</a></li>								
 								<li><a href="http://www.iitbbs.ac.in/">About Campus</a></li>
 								<li><a href="http://www.iitbbs.ac.in/cdc/doc/IIT%20BBSR%20Placement%20Brochure%202019-20%20updated-final.pdf" class="drop-text" target="_blank">Placement Brochure</a></li>
-								<li><a href="gallery.html">Gallery</a></li>
+								<li><a href="gallery.html" class="active" style="background-color: transparent;">Gallery</a></li>
 								<li><a href="/redirect">Log in</a></li>
 							</ul>
 						</nav>
 					</div>
+					<!-- //nav -->
 				</div>
 			</div>
 		</header>
@@ -84,244 +154,69 @@
 
 		<!-- banner -->
 		<div class="banner_w3lspvt-2"><br>
-			<ol class="breadcrumb"  style="background-color: white;">
+			<ol class="breadcrumb" style="background-color: white;">
 				<li class="breadcrumb-item"><a href="index.html" class="font-weight-bold">Home</a></li>
-				<li class="breadcrumb-item" aria-current="page">Faculty Coordinators</li>
+				<li class="breadcrumb-item" aria-current="page">Gallery</li>
 			</ol><br>
 		</div>
 		<!-- //banner -->
 	</div>
 	<!-- //main banner -->
 
-	<!-- content-->
-	<div class="row">
-		<div class="page-title text-center">
-          <h2>Faculty Coordinators</h2>
-          <hr class="pg-titl-bdr-btm"></hr>
-	    </div>
-		<div class="col-md-2 col-sm-2">
+	<!-- content -->
+	<div class="page-title text-center">
+      <h2>Gallery</h2>
+      <hr class="pg-titl-bdr-btm"></hr>
+    </div>
+	<div class="slideshow-container">
+
+		<div class="mySlides fade">
+		  <!-- <div class="numbertext">1 / 3</div> -->
+		  <img src="images/1.jpg" style="width:100%">
+		  <!-- <div class="text">Caption Text</div> -->
 		</div>
 
-		<div class="col-md-8 col-sm-8 mar">
-			<div class="row">
-				<div class="col-12 d-flex justify-content-center">
-					<p><strong><u>School of Basic Sciences:</u></strong></p>
-				</div>
-			</div>
-			<hr>
-			<div class="row">
-				<div class="col-3">
-					<p><strong><u>Physics</u></strong></p>
-				</div>
-				<div class="col-7">
-					<p>Dr.  Chandrasekhar  Bhamidipati<br>
-					Assistant Professor <br>
-					Email: <a href="mailto:chandrasekhar@iitbbs.ac.in" target="_blank">chandrasekhar@iitbbs.ac.in</a><br>
-					Web: &nbsp;<a href="http://www.iitbbs.ac.in/profile.php/chandrasekhar/" target="_blank">View Profile</a></p>
-				</div>
-				<div class="col-2">
-					<img title="Chandrasekhar Bhamidipati" class="img-rounded" height="90" alt="Photo of Chandrasekhar Bhamidipati" src="http://www.iitbbs.ac.in/faculty/iit_1332165034.JPG">
-				</div>
-			</div>
-			<hr>
-			<div class="row">
-				<div class="col-3">
-					<p><strong><u>Chemistry</u></strong></p>
-				</div>
-				<div class="col-7">
-					<p>Dr. Tabrez Khan<br>
-					Assistant  Professor<br>
-					Email: <a href="mailto:tabrez@iitbbs.ac.in" target="_blank">tabrez@iitbbs.ac.in</a><br>
-					Web: <a href="http://www.iitbbs.ac.in/profile.php/tabrez/" target="_blank">View Profile</a>
-				</div>
-				<div class="col-2">
-					<img title="Tabrez Khan" class="img-rounded" height="90" alt="Photo of Tabrez Khan" src="http://www.iitbbs.ac.in/faculty/iit_1398978584.jpg">
-				</div>
-			</div>
-			<hr>
-			<div class="row">
-				<div class="col-3">
-					<p><strong><u>Mathematics</u></strong></p>
-				</div>
-				<div class="col-7">
-					<p>Dr. Sunil Kumar Prajapathi<br>
-					Assistant Professor<br>
-					Email: <a href="mailto:skprajapati@iitbbs.ac.in">skprajapati@iitbbs.ac.in</a><br>
-					Web: <a href="http://www.iitbbs.ac.in/profile.php/skprajapati/">View Profile</a>
-				</div>
-				<div class="col-2">
-					<img src="http://www.iitbbs.ac.in/faculty/iit_1500652252.jpg" width="84" alt="">
-				</div>
-			</div>
-
-			<br><br>
-			<div class="row">
-				<div class="col-12 d-flex justify-content-center">
-					<p><strong><u>School of Earth, Ocean &amp; Climate Sciences:</u></strong></p>
-				</div>
-			</div>
-			<hr>
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="row">
-						<div class="col-9">
-							<p>Dr. Raj Kumar Singh <br>
-							Assistant Professor<br>
-							Email: <a href="mailto:rksingh@iitbbs.ac.in">rksingh@iitbbs.ac.in</a><br>
-							Web: <a href="http://www.iitbbs.ac.in/profile.php/rajkursingh/" target="_blank">View Profile</a></p>
-						</div>
-						<div class="col-3">
-							<img title="Raj Kumar Singh" class="img-rounded" height="90" alt="Photo of Raj Kumar Singh" src="http://www.iitbbs.ac.in/faculty/iit_1437764777.jpg">
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="row">
-						<div class="col-9">
-							<p>Dr. Sourav Sil<br>
-							Assistant Professor&nbsp;<br>
-							Email: <a href="mailto:souravsil@iitbbs.ac.in">souravsil@iitbbs.ac.in</a> <br>
-							Web: <a href="http://www.iitbbs.ac.in/profile.php/souravsil/" target="_blank">View Profile</a> &nbsp;</p>
-						</div>
-						<div class="col-3">
-							<img title="Sourav Sil" class="img-rounded" height="90" alt="Photo of Sourav Sil" src="http://www.iitbbs.ac.in/faculty/iit_1470985949.jpg">
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<br><br>
-			<div class="row">
-				<div class="col-12 d-flex justify-content-center">
-					<p><strong><u>School of Electrical Sciences:</u></strong></p>
-				</div>
-			</div>
-			<hr>
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="row">
-						<div class="col-9">
-							<p>Dr. Srinivas Boppu (ECE)<br>
-							Assistant Professor&nbsp; <br>
-							Email: <a href="mailto:srinivas@iitbbs.ac.in">srinivas@iitbbs.ac.in</a><br>
-							Web: <a href="http://www.iitbbs.ac.in/profile.php/sboppu/">View Profile</a></p>
-						</div>
-						<div class="col-3">
-							<img title="Srinivas Boppu" class="img-rounded" height="90" alt="Photo of Srinivas Boppu" src="http://www.iitbbs.ac.in/faculty/iit_1508960608.jpg">
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="row">
-						<div class="col-9">
-							<p>Dr.  Srinivas Pinisetty (CSE)&nbsp;<br>
-							Assistant Professor <br>
-							Email: <a href="mailto:spinisetty@iitbbs.ac.in">spinisetty@iitbbs.ac.in</a> <br>
-							Web:<a href="http://www.iitbbs.ac.in/profile.php/srinivaspinisetty/" target="_blank">View Profile</a></p>
-						</div>
-						<div class="col-3">
-							<img src="http://www.iitbbs.ac.in/images/pdfresizer_com-pdf-crop-1.png" width="65" height="90" alt="">&nbsp;
-						</div>
-					</div>
-				</div>
-			</div>
-			<hr>
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="row">
-						<div class="col-9">
-							<p>Dr.  Niladri Bihari Puhan (EE)<br>
-							Assistant Professor <br>
-							Email: <a href="mailto:nbpuhan@iitbbs.ac.in">nbpuhan@iitbbs.ac.in</a><br>
-							Web: <a href="http://www.iitbbs.ac.in/profile.php/nbpuhan/" target="_blank">View Profile</a></p>
-						</div>
-						<div class="col-3">
-							<img title="Niladri Bihari Puhan" class="img-rounded" height="90" alt="Photo of Niladri Bihari Puhan" src="http://www.iitbbs.ac.in/faculty/iit_1451861512.png">
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="row">
-						<div class="col-9">
-							<p>Dr. Olive Ray (EE)&nbsp;<br>
-							Assistant Professor <br>
-							Email: <a href="mailto:olive@iitbbs.ac.in">olive@iitbbs.ac.in</a><br>
-						Web: <a href="http://www.iitbbs.ac.in/profile.php/oliveray/">View Profile</a></p>
-						</div>
-						<div class="col-3">
-							<img src="http://www.iitbbs.ac.in/images/olive.JPG" width="90" height="90" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<br><br>
-			<div class="row">
-				<div class="col-12 d-flex justify-content-center">
-					<p><strong><u>School of Mechanical Sciences:</u></strong></p>
-				</div>
-			</div>
-			<hr>
-			<div class="row">
-				<div class="col-10">
-					<p>Dr.  Anirban Bhattacharya<br>
-					Assistant Professor<br>
-					Email: <a href="mailto:anirban@iitbbs.ac.in">anirban@iitbbs.ac.in</a><br>
-					Web: <a href="http://www.iitbbs.ac.in/profile.php/anirban/" target="_blank">http://www.iitbbs.ac.in/profile.php/anirban/</a></p>
-				</div>
-				<div class="col-2">
-					<img title="Anirban Bhattacharya" class="img-rounded" height="90" alt="Photo of Anirban Bhattacharya" src="http://www.iitbbs.ac.in/faculty/iit_1459995540.JPG">
-				</div>
-			</div>
-
-			<br><br>
-			<div class="row">
-				<div class="col-12 d-flex justify-content-center">
-					<p><strong><u>School of Infrastructure:</u></strong></p>
-				</div>
-			</div>
-			<hr>
-			<div class="row">
-				<div class="col-10">
-					<p>Dr. Umesh Chandra Sahoo<a id="fck_paste_padding">&#65279;</a><br>
-					Assistant Professor<br>
-					Email: <a href="mailto:ucsahoo@iitbbs.ac.in">ucsahoo@iitbbs.ac.in</a><br>
-					Web: <a href="http://www.iitbbs.ac.in/profile.php/ucsahoo/" target="_blank">http://www.iitbbs.ac.in/profile.php/ucsahoo/</a></p>
-				</div>
-				<div class="col-2">
-					<img title="Dr. Umesh C. Shaoo" class="img-rounded" height="90" alt="Photo of Sumanta Haldar" src="http://www.iitbbs.ac.in/faculty/iit_1326713088.jpg">
-				</div>
-			</div>
-			
-			<br><br>
-			<div class="row">
-				<div class="col-12 d-flex justify-content-center">
-					<p><strong><u>School of Minerals, Metallurgical &amp; Materials  Engg:</u></strong></p>
-				</div>
-			</div>
-			<hr>
-			<div class="row">
-				<div class="col-10">
-					<p>Dr. Srikant Gollapudi<br>
-					Assistant Professor<br>
-					Email: <strong>&nbsp;</strong><a href="mailto:srikantg@iitbbs.ac.in">srikantg@iitbbs.ac.in</a><br>
-					Web: <a href="http://www.iitbbs.ac.in/profile.php/srikantg/" target="_blank">http://www.iitbbs.ac.in/profile.php/srikantg/</a></p>
-				</div>
-				<div class="col-2">
-					<img title="Dr. Srikant Gollapudi" class="img-rounded" height="90" alt="Dr. Srikant Gollapudi" src="http://www.iitbbs.ac.in/faculty/iit_1503330421.jpg">
-				</div>
-			</div>
-
+		<div class="mySlides fade">
+		  <!-- <div class="numbertext">2 / 3</div> -->
+		  <img src="images/2.jpg" style="width:100%">
+		  <!-- <div class="text">Caption Two</div> -->
 		</div>
 
+		<div class="mySlides fade">
+		  <!-- <div class="numbertext">3 / 3</div> -->
+		  <img src="images/3.jpg" style="width:100%">
+		  <!-- <div class="text">Caption Three</div> -->
+		</div>
 
-		 <div class="col-md-2 col-sm-2">
+		<div class="mySlides fade">
+		  <!-- <div class="numbertext">2 / 3</div> -->
+		  <img src="images/4.jpg" style="width:100%">
+		  <!-- <div class="text">Caption Two</div> -->
+		</div>
 
-		 </div>
+		<div class="mySlides fade">
+		  <!-- <div class="numbertext">3 / 3</div> -->
+		  <img src="images/5.jpg" style="width:100%">
+		  <!-- <div class="text">Caption Three</div> -->
+		</div>
+
+	</div>
+		<br>
+
+	<div style="text-align:center">
+	  <span class="dot"></span>
+	  <span class="dot"></span>
+	  <span class="dot"></span>
+	  <span class="dot"></span>
+	  <span class="dot"></span>
 	</div>
 
- <br><br>
+		
+
+	<!-- //middle -->
+	<br><br>
 	<!-- //content -->
+	
 	<!-- slideshow -->
 	<div class="page-title text-center">
       <h2>Top Recruiters</h2>
@@ -431,6 +326,27 @@
 		  autoplaySpeed: 2000,
 		});
     });
+	</script>
+	<script>
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  for (i = 0; i < slides.length; i++) {
+		    slides[i].style.display = "none";
+		  }
+		  slideIndex++;
+		  if (slideIndex > slides.length) {slideIndex = 1}
+		  for (i = 0; i < dots.length; i++) {
+		    dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  dots[slideIndex-1].className += " active";
+		  setTimeout(showSlides, 4000); // Change image every 2 seconds
+		}
 	</script>
 
 </body>

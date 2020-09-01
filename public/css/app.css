@@ -3610,7 +3610,6 @@ input[type=button].btn-block {
 
 .dropdown-item {
   display: block;
-  width: 100%;
   padding: 0.25rem 1.5rem;
   clear: both;
   font-weight: 400;
@@ -4443,11 +4442,6 @@ input[type=button].btn-block {
   list-style: none;
 }
 
-.nav-link {
-  display: block;
-  padding: 0.5rem 1rem;
-}
-
 .nav-link:hover,
 .nav-link:focus {
   text-decoration: none;
@@ -4972,7 +4966,6 @@ input[type=button].btn-block {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 }
 
@@ -10894,7 +10887,7 @@ a.text-dark:focus {
   border: 1px solid black;
   margin: 30px 120px 30px 120px;
   padding:10px;
-
+  width:75vw;
 }
 .cen{
   text-align:center;
@@ -10948,4 +10941,40 @@ th {
 }
 .tab{
   margin-left: 20px;
+}
+
+.course {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	display: flex;
+	max-width: 100%;
+	margin: 20px;
+	overflow: hidden;
+	width: 700px;
+}
+
+.course h6 {
+	opacity: 0.6;
+    text-align:center;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.course h2 {
+	letter-spacing: 1px;
+}
+
+.course-preview {
+	background-color: #2A265F;
+	color: #fff;
+	padding: 30px;
+	max-width: 150px;
+}
+
+.course-info {
+    vertical-align:center;
+	padding: 30px;
+	position: relative;
+	width: 100%;
 }

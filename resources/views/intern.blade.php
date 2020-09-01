@@ -1,13 +1,28 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container-fluid">
-    <div class="row justify-content-center">
-        @foreach(array_reverse($data) as $data)
-        <?php $department = explode('"', $data->department);  ?>       
-            @foreach($department as $department)
-            @if(substr(Auth::user()->roll, 2, 2) == $department )
 
+<div class="container dropdown" style="display:block;">
+  <button class="btn dropdown-toggle" style="display:block;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Sort By
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="/internship?sort=company_name&dir=Asc">Company Name: A to Z</a>
+    <a class="dropdown-item" href="/internship?sort=company_name&dir=Desc">Company Name: Z to A</a>
+    <a class="dropdown-item" href="/internship?sort=deadline&dir=Asc">Deadline: latest to oldest</a>
+    <a class="dropdown-item" href="/internship?sort=deadline&dir=Desc">Deadline: oldest to latest</a>
+    <a class="dropdown-item" href="/internship?sort=examdate&dir=Asc">Exam Date: latest to oldest</a>
+    <a class="dropdown-item" href="/internship?sort=examdate&dir=Desc">Exam Date: oldest to latest</a>
+    <a class="dropdown-item" href="/internship?sort=CTC&dir=Asc">CTC: highest to lowest</a>
+    <a class="dropdown-item" href="/internship?sort=CTC&dir=Desc">CTC: lowest to highest</a>
+  </div>
+</div>
+@foreach ($data as $data)
+<?php $department = explode('"', $data->department);  ?>       
+    @foreach($department as $department)
+    @if(substr(Auth::user()->roll, 2, 2) == $department )
+    <div class="container-fluid">
+        <div class="row justify-content-center">
             <div class="bor">
               <form action="regi" method="get">
                 <div class="row">
@@ -71,10 +86,11 @@
                 </div>
                 
             </div>
+            </div>
+        </div>    
             
             @endif
             @endforeach
         @endforeach
-    </div>
-</div>
+
 @endsection

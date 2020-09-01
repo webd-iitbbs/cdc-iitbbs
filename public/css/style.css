@@ -1,10 +1,3 @@
-/*--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
-/* Reset Code */
 body {
     padding: 0;
     margin: 0;
@@ -59,7 +52,6 @@ p {
     margin: 0;
     padding: 0;
     font-size: 14px;
-    letter-spacing: 1px;
     line-height: 1.9;
     color: #51585f;
 }
@@ -161,7 +153,7 @@ nav ul {
 
 /* Positioning the navigation items inline */
 nav ul li {
-    margin: 0px;
+    margin: 2px;
     display: inline-block;
     float: left;
 }
@@ -169,8 +161,6 @@ nav ul li {
 /* Styling the links */
 nav a {
     color: #202428;
-    font-size: 17px;
-    letter-spacing: .5px;
     margin: 0 10px;
     font-weight: 400;
 }
@@ -180,7 +170,7 @@ nav a {
 .menu li a.active,
 nav a:hover,
 nav ul ul li a:hover {
-    color: #05b993;
+    color: #;
 }
 
 /* Hide Dropdowns by Default
@@ -1181,21 +1171,6 @@ form.contact-wthree-do label {
     resize: none;
 }
 
-.contact-wthree-do .form-control {
-    background: #f8f9fa;
-    padding: 12px 10px;
-    border: 1px solid #dedede;
-    border-left: 3px solid #705ecf;
-    letter-spacing: 1px;
-    font-size: 15px;
-    border-radius: 0px;
-    -webkit-border-radius: 0px;
-    -o-border-radius: 0px;
-    -moz-border-radius: 0px;
-    -ms-border-radius: 0px;
-    color: #000;
-}
-
 button.btn-cont-w3 {
     background: #705ecf;
     color: #ffffff;
@@ -1284,10 +1259,6 @@ button.btn-cont-w3 {
     }
 
     .accordion-item-hd {
-        font-size: 14px;
-    }
-
-    .contact-wthree-do .form-control {
         font-size: 14px;
     }
 }
@@ -1584,10 +1555,6 @@ button.btn-cont-w3 {
         font-size: 16px;
     }
 
-    .contact-wthree-do .form-control {
-        font-size: 13px;
-    }
-
     button.btn-cont-w3 {
         font-size: 15px;
     }
@@ -1625,3 +1592,144 @@ button.btn-cont-w3 {
 }
 
 /* //responsive */
+/* Contact Form */
+.section-padding {
+    padding: 40px 0px;
+}
+.page-title {
+    margin-bottom: 40px;
+}
+.text-center {
+    text-align: center;
+}
+.pg-titl-bdr-btm {
+    width: 100px;
+    height: 3px;
+    background-color: #e43c5c;
+}
+.form-sec{
+    width: 100%;
+}
+.form-sec textarea {
+    height: 220px;
+}
+
+.validation {
+    color: red;
+    display:none;
+    margin: 0 0 20px;
+    font-weight:400;
+    font-size:13px;
+}
+
+#sendmessage {
+    color: green;
+    border:1px solid green;
+    display:none;
+    text-align:center;
+    padding:15px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+#errormessage {
+    color: red;
+    display:none;
+    border:1px solid red;
+    text-align:center;
+    padding:15px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+#sendmessage.show, #errormessage.show, .show {
+    display:block;
+}
+.button-medium {
+    background: #e43c5c;
+    border-radius: 40px;
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    height: 48px;
+    line-height: 48px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    width: 200px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #e43c5c;
+    box-shadow: none;
+    outline: none;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.page-title
+{
+    margin-bottom: 40px;
+    width: 100%;
+}
+.text-center {
+    text-align: center;
+}
+#faq{
+    margin-top: 0;
+}
+
+.active, .menu > li > a:hover, .menu > li > a:focus {
+    border-bottom: 2px solid #E74C3C;
+    outline: none;
+    padding-bottom:3px;
+}
+
+.menu > .active > a, .menu > .active > a:focus, .menu > .active > a:hover {
+    color: #354242;
+    background-color: #fff;
+}
+
+.menu > li > a {
+    color: #354242;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+#logo{
+    min-width: 34vw;
+}
+#banner {
+    background: url(../images/banner.jpg) no-repeat;
+    background-size: cover;
+    min-height: 565px;
+    margin-top: -0px;
+}
+@media (max-width: 768px) and (min-width: 300px){
+    #banner {
+        background: url(../images/banner-mob.jpg) no-repeat;
+        background-size: contain;
+        min-height: 205px;
+        width: 100% ;
+        margin-top: 0px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .cta-1{
+        margin-top: -38px;
+    }
+    .cta-1 h3{
+        font-size: 15px;
+    }
+}
+.cta-1{
+    background-color: #e43c5c;
+    padding: 10px 0px 10px;
+    height: 120%;
+}
+.white {
+    color: #fff !important;
+}

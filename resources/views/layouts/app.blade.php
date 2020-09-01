@@ -18,39 +18,33 @@
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <!-- Styles -->
+    
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ URL::to('/') }}/css/style.css">
     @yield('css')
+    
 </head>
 <body>
     <div id="app" style="background:white;">
-        <div class="container ">
-            <div class="header d-lg-flex justify-content-between align-items-center py-3 px-sm-3">
-                <img class="img-fluid" src="{{ URL::to('/') }}/images/header2.png">
-            </div>
-	    </div>
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'CDC IITBBS') }}
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
-                        
-                        {{ menu('normal','my_menu')}}
-                       
-                        
-                        @guest
+        <header>
+			<div class="container-fluid">
+				<div class="header d-lg-flex justify-content-between align-items-center py-3 px-sm-3">
+					<!-- logo -->
+					<div id="logo">
+						<h1><a href="/"><img class="img-fluid" style="max-height:113px;" src="{{ URL::to('/') }}/images/header.png"></a></h1>
+					</div>
+					<!-- logo -->
+					<!-- nav -->
+					<div class="nav_w3ls">
+						<nav>
+							<label for="drop" class="toggle">Menu</label>
+							<input type="checkbox" id="drop" />
+							<ul class="menu">
+                                <li><a href="/forums" class="{{ Request::is('forums') ? 'active' : '' }}">Forums</a></li>
+								<li><a href="/home" class="{{ Request::is('home') ? 'active' : '' }}">Home</a></li>
+								<li><a href="/internship" class="{{ Request::is('internship') ? 'active' : '' }}">internship</a></li>
+								<li><a href="/placement" class="{{ Request::is('placement') ? 'active' : '' }}">Placement</a></li>
+                            @guest
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ url('/redirect') }}" class="btn "><i class="fa fa-google" aria-hidden="true"></i> &nbsp; Login With Google</a>
                             </li>
@@ -80,12 +74,15 @@
                                 </div>
                             </li>
                         @endguest
-                    </ul>
-                </div>
-            </div>
-        </nav>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
 
-        <main class="py-4" style="background-color: white; margin-top: 10px;">
+
+        <main class="py-4" style="background-color: white;">
             @yield('content')
         </main>
         @yield('js')
