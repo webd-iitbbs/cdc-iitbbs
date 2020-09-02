@@ -9,12 +9,12 @@
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
     <a class="dropdown-item" href="/internship?sort=company_name&dir=Asc">Company Name: A to Z</a>
     <a class="dropdown-item" href="/internship?sort=company_name&dir=Desc">Company Name: Z to A</a>
-    <a class="dropdown-item" href="/internship?sort=deadline&dir=Asc">Deadline: latest to oldest</a>
-    <a class="dropdown-item" href="/internship?sort=deadline&dir=Desc">Deadline: oldest to latest</a>
-    <a class="dropdown-item" href="/internship?sort=examdate&dir=Asc">Exam Date: latest to oldest</a>
-    <a class="dropdown-item" href="/internship?sort=examdate&dir=Desc">Exam Date: oldest to latest</a>
-    <a class="dropdown-item" href="/internship?sort=CTC&dir=Asc">CTC: highest to lowest</a>
-    <a class="dropdown-item" href="/internship?sort=CTC&dir=Desc">CTC: lowest to highest</a>
+    <a class="dropdown-item" href="/internship?sort=deadline&dir=Desc">Deadline: latest to oldest</a>
+    <a class="dropdown-item" href="/internship?sort=deadline&dir=Asc">Deadline: oldest to latest</a>
+    <a class="dropdown-item" href="/internship?sort=examdate&dir=Desc">Exam Date: latest to oldest</a>
+    <a class="dropdown-item" href="/internship?sort=examdate&dir=Asc">Exam Date: oldest to latest</a>
+    <a class="dropdown-item" href="/internship?sort=CTC&dir=Desc">CTC: highest to lowest</a>
+    <a class="dropdown-item" href="/internship?sort=CTC&dir=Asc">CTC: lowest to highest</a>
   </div>
 </div>
 @foreach ($data as $data)
