@@ -114,7 +114,13 @@
 		<hr>
 		<h4>IMPORTANT NOTE:</h4>
 		<p>The placement cell maintains a complete database of all the students selected by the companies. A student once selected may or may not be allowed to appear in another interview(s) depending upon the placement policy of the Institute. The placement cell reserves the right to amend the placement policy of the Institute, if required.</p>
+		<br><h3> Downloads: </h3>
+		<ul class="list marg">
+			<li><a href="#">JNF</a>&nbsp;(<a target="_blank" href="http://www.iitbbs.ac.in/cdc/doc/JNF-IITBBS.doc">DOC</a> | <a target="_blank" href="http://www.iitbbs.ac.in/cdc/doc/JNF-IITBBS.pdf">PDF</a>)</li>
+			<li><a href="#">INF</a>&nbsp;(<a target="_blank" href="http://www.iitbbs.ac.in/cdc/doc/INF-IITBBS.doc">DOC</a>&nbsp;|&nbsp;<a target="_blank" href="http://www.iitbbs.ac.in/cdc/doc/INF-IITBBS.pdf">PDF</a>)</li>
+		</ul>
 	</div><br><br>
+	
 	<!-- //content -->
 	
 	<!-- slideshow -->
