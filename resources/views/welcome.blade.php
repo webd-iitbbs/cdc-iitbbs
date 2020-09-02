@@ -80,14 +80,14 @@
 							<input type="checkbox" id="drop" />
 							<ul class="menu">
 								<li><a href="/" class="active">Home</a></li>
-								<li><a href="pandp.html">Procedure & Policy</a></li>
-								<li><a href="facilities.html">Facilities</a></li>
-								<li><a href="hop.html">Highlights of Placement</a></li>
-								<li><a href="fcoordinators.html">Faculty Coordinators</a></li>
-								<li><a href="scoordinators.html">Student Coordinators</a></li>								
+								<li><a href="pandp.php">Procedure & Policy</a></li>
+								<li><a href="facilities.php">Facilities</a></li>
+								<li><a href="hop.php">Highlights of Placement</a></li>
+								<li><a href="fcoordinators.php">Faculty Coordinators</a></li>
+								<li><a href="scoordinators.php">Student Coordinators</a></li>								
 								<li><a href="http://www.iitbbs.ac.in/">About Campus</a></li>
 								<li><a href="http://www.iitbbs.ac.in/cdc/doc/IIT%20BBSR%20Placement%20Brochure%202019-20%20updated-final.pdf" class="drop-text" target="_blank">Placement Brochure</a></li>
-								<li><a href="gallery.html">Gallery</a></li>
+								<li><a href="gallery.php">Gallery</a></li>
 								<li><a href="/redirect">Log in</a></li>
 							</ul>
 						</nav>

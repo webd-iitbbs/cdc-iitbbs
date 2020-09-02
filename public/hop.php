@@ -157,7 +157,183 @@
 	</div>
 <br>
 <br>
-
+<div class="page-title text-center">
+	<h2>Our Recruiters</h2>
+	<hr class="pg-titl-bdr-btm"></hr>
+</div>
+<div class="container">
+<style>
+.success{
+	background:#dff0d8;
+}
+</style>
+<table class="table table-bordered" Style="width:80%; margin:auto;">
+    <tbody>
+        <tr class="success">
+            <td align="center">Goldman Sachs</td>
+            <td align="center">Go-Jek</td>
+            <td align="center">Amazon</td>
+            <td align="center">Adobe</td>
+        </tr>
+        <tr class="">
+            <td align="center">Tesco</td>
+            <td align="center">OYO</td>
+            <td align="center">Directi</td>
+            <td align="center">ISRO</td>
+        </tr>
+        <tr class="success">
+            <td align="center">Futures First</td>
+            <td align="center">Deloitte</td>
+            <td align="center">Oracle</td>
+            <td align="center">Ittiam</td>
+        </tr>
+        <tr class="">
+            <td align="center">MAQ Software</td>
+            <td align="center">Bharat Seats Ltd</td>
+            <td align="center">Samsung R  &amp; D</td>
+            <td align="center">KPIT</td>
+        </tr>
+        <tr class="success">
+            <td align="center">TCS R &amp; D</td>
+            <td align="center">Zuti Engg</td>
+            <td align="center">Delta Power Solutions</td>
+            <td align="center">NCCBM</td>
+        </tr>
+        <tr class="">
+            <td align="center">Wipro</td>
+            <td align="center">Reliance Jio</td>
+            <td align="center">Fiitjee</td>
+            <td align="center">Accenture</td>
+        </tr>
+        <tr class="success">
+            <td align="center">BSEC</td>
+            <td align="center">KIIT</td>
+            <td align="center">Rao Edusolutions</td>
+            <td align="center">Maruti Suzuki</td>
+        </tr>
+        <tr class="">
+            <td align="center">Dolcera</td>
+            <td align="center">Manikaran Power Ltd</td>
+            <td align="center">Edubrisk Solutions</td>
+            <td align="center">MIC  College of Technology</td>
+        </tr>
+        <tr class="success">
+            <td align="center">AAKASH Institute</td>
+            <td align="center">Affine Analytics</td>
+            <td align="center">Altair</td>
+            <td align="center">Avanti Learning Centre</td>
+        </tr>
+        <tr>
+            <td align="center">Aindra</td>
+            <td align="center">Airvana</td>
+            <td align="center">Altair Engineering</td>
+            <td align="center">Asteria Aerospace</td>
+        </tr>
+        <tr class="success">
+            <td align="center">AVTEC LTD.</td>
+            <td align="center">Axiom Research Labs Private Ltd.</td>
+            <td align="center">BPCL</td>
+            <td align="center">Capgemini</td>
+        </tr>
+        <tr>
+            <td align="center">CEWIT</td>
+            <td align="center">Coal India Ltd</td>
+            <td align="center">Cognizant Technology Solutions</td>
+            <td align="center">Computer Associates</td>
+        </tr>
+        <tr class="success">
+            <td align="center">Co-Cubes</td>
+            <td align="center">Digital Management Inc. [DMI]</td>
+            <td align="center">DRDO</td>
+            <td align="center">Finisar, Malaysia</td>
+        </tr>
+        <tr>
+            <td align="center">Flipkart Online Service Pvt. Ltd.</td>
+            <td align="center">Focus 4-D career Education Pvt. Ltd.</td>
+            <td align="center">Grofers</td>
+            <td align="center">HPCL</td>
+        </tr>
+        <tr class="success">
+            <td align="center">HCL</td>
+            <td align="center">Hindalco Industries Ltd.</td>
+            <td align="center">IBM</td>
+            <td align="center">Infosys Ltd.</td>
+        </tr>
+        <tr>
+            <td align="center">Innoplexus</td>
+            <td align="center">Innovaccer</td>
+            <td align="center">Inteliment</td>
+            <td align="center">Indian Oil Corporation Ltd. [IOCL]</td>
+        </tr>
+        <tr class="success">
+            <td align="center">iNautix</td>
+            <td align="center">L and T Construction</td>
+            <td align="center">L &amp; T Construction, Chennai</td>
+            <td align="center">L &amp; T Construction, Kolkata</td>
+        </tr>
+        <tr>
+            <td align="center">L and W Constructions</td>
+            <td align="center">Mahindra &amp; Mahindra Ltd.</td>
+            <td align="center">Marvel Realtors</td>
+            <td align="center">MathWorks</td>
+        </tr>
+        <tr class="success">
+            <td align="center">MuSigma</td>
+            <td align="center">Net Cracker</td>
+            <td align="center">NYKAA</td>
+            <td align="center">Oil and Natural Gas Corporation Limited [ONGC]</td>
+        </tr>
+        <tr>
+            <td align="center">Originet Tech. Ltd.</td>
+            <td align="center">Persistent</td>
+            <td align="center">RITES</td>
+            <td align="center">Samsung India Electronics Pvt. Ltd.</td>
+        </tr>
+        <tr class="success">
+            <td align="center">Sankalp semiconductor</td>
+            <td align="center">Seclore</td>
+            <td align="center">Semtech</td>
+            <td align="center">Signion Systems</td>
+        </tr>
+        <tr>
+            <td align="center">Sokrati&nbsp;</td>
+            <td align="center">SOA UNIVERSITY</td>
+            <td align="center">Soctronics Technologies</td>
+            <td align="center">SRC Technik</td>
+        </tr>
+        <tr class="success">
+            <td align="center">Sun Route</td>
+            <td align="center">TCS Digital Enterprises Solutions &amp; Services</td>
+            <td align="center">TCS (IT and S/W)</td>
+            <td align="center">TATA Motors</td>
+        </tr>
+        <tr>
+            <td align="center">Tata Steel</td>
+            <td align="center">Tata Power</td>
+            <td align="center">TATA Consulting Engineers Ltd.</td>
+            <td align="center">Texas Instrument</td>
+        </tr>
+        <tr class="success">
+            <td align="center">Tricon InfoTech</td>
+            <td align="center">Trident Group</td>
+            <td align="center">United Health Group Information Services Pvt. Ltd.</td>
+            <td align="center">United Health Group</td>
+        </tr>
+        <tr>
+            <td align="center">Vedanta</td>
+            <td align="center">Videonetics</td>
+            <td align="center">Visa Steel</td>
+            <td align="center">WSP Parsons</td>
+        </tr>
+        <tr class="success">
+            <td colspan="2" align="center">ZeMoso Technologies</td>
+            <td colspan="2" align="center">Microsoft</td>
+        </tr>
+        <tr>
+        </tr>
+    </tbody>
+</table>
+</div>
 	<!-- //content -->
 <!-- slideshow -->
 	<div class="page-title text-center">
