@@ -16,7 +16,7 @@
 		}
 	</script>
 	<!-- //Meta tag Keywords -->
-
+	<link rel="shortcut icon" href="{{ URL::to('/') }}/images/favicon.ico">
 	<!-- Custom-Files -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<!-- Bootstrap-Core-CSS -->
