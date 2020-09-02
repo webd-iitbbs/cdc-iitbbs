@@ -18,7 +18,7 @@
 </div>
 <div class="container-fluid">
     <div class="row justify-content-center">
-        @foreach(array_reverse($data) as $data)
+        @foreach($data as $data)
         <?php $department = explode('"', $data->department);  ?>       
             @foreach($department as $department)
             @if(substr(Auth::user()->roll, 2, 2) == $department )
