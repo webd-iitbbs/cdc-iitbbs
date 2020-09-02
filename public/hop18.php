@@ -138,7 +138,7 @@
 		            <td width="161" valign="top">83</td>
 		        </tr>
 		        <tr>
-		            <td width="128" valign="top">Mechanical  Engineering91</td>
+		            <td width="128" valign="top">Mechanical  Engineering</td>
 		            <td width="161" valign="top">91</td>
 		        </tr>
 		        <tr>
