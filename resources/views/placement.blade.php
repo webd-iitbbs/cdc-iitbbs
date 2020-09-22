@@ -16,13 +16,13 @@
     <a class="dropdown-item" href="/placement?sort=CTC&dir=Asc">CTC: lowest to highest</a>
   </div>
 </div>
-<div class="container-fluid">
-    <div class="row justify-content-center">
-        @foreach($data as $data)
-        <?php $department = explode('"', $data->department);  ?>       
-            @foreach($department as $department)
-            @if(substr(Auth::user()->roll, 2, 2) == $department )
 
+@foreach($data as $data)
+<?php $department = explode('"', $data->department);  ?>       
+    @foreach($department as $department)
+    @if(substr(Auth::user()->roll, 2, 2) == $department )
+        <div class="container-fluid">
+        <div class="row justify-content-center">
             <div class="bor">
               <form action="regp" method="get">
                 <div class="row">
@@ -87,10 +87,10 @@
                 </div>
                 
             </div>
-            
+            </div>
+</div>
             @endif
             @endforeach
         @endforeach
-    </div>
-</div>
+
 @endsection
