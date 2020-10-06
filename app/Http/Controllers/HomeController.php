@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\Storage;
 
 
 class HomeController extends Controller
@@ -90,27 +91,80 @@ class HomeController extends Controller
 
             $s = 'updated successfully';
             $roll = $request['roll'];
-            $phone = $request['phone'];
+            $branch = $request['branch'];
+            $degree = $request['degree'];
+            $gender = $request['gender'];
             $cgpa = $request['cgpa'];
             $tenth = $request['tenth'];
             $twelfth = $request['twelfth'];
+            $phone = $request['phone'];
+            $phone2 = $request['phone2'];
+            $email2 = $request['email2']; 
+            $backlogs = $request['backlogs'];
+            $gap = $request['gap']; 
+            $address = $request['address'];          
+            $state = $request['state'];
+
+        DB::update("UPDATE `users` SET `roll` = '$roll' , `branch` = '$branch' ,`degree` = '$degree' , `gender` = '$gender' ,
+        `phone` = '$phone' ,`phone2` = '$phone2', `email2` = '$email2' , `cgpa` = '$cgpa' , `TenthScore` = '$tenth' ,`TwelfthScore` = '$twelfth',
+        `backlogs` = '$backlogs' , `gap` = '$gap' , `address` = '$address' , `address` = '$address'  WHERE `users`.`id` = '$id'");
         
-        DB::update("UPDATE `users` SET `roll` = '$roll' , `phone` = '$phone' , `cgpa` = '$cgpa' , `TenthScore` = '$tenth' ,`TwelfthScore` = '$twelfth'  WHERE `users`.`id` = '$id'");
-        
-        if (substr($roll, 0, 2) == '18'){
+        if (substr($roll, 0, 2) == '18' && ($degree == 01 || $degree == 02) ){
         DB::table('thirdyear')->insert([
-            ['name' => Auth::user()->name, 'email' => Auth::user()->email, 'roll' => $roll, 'phone' => $phone ]
+            ['name' => Auth::user()->name, 'email' => Auth::user()->email]
         ]);
         }
 
-        if (substr($roll, 0, 2) == '17') 
+        if ((substr($roll, 0, 2) == '17' && $degree == 01) || (substr($roll, 0, 2) == '16' && $degree == 02) ) 
         DB::table('fourthyear')->insert([
-            ['name' => Auth::user()->name, 'email' => Auth::user()->email, 'roll' => $roll, 'phone' => $phone ]
+            ['name' => Auth::user()->name, 'email' => Auth::user()->email]
         ]);
 
         echo "<script> alert('updated successfully') </script>";
-        header("url= /user/profile");
+        header("Refresh: 1; url= /user/profile");
     }
 
+    public function resume()
+    {   
+        $id = Auth::user()->id;
 
+        $user = DB::table('users')->where('id', '$id')->first();
+
+        return view('resume');
+    }
+
+    public function resumeupdate(Request $request)
+    {
+        $id = Auth::user()->roll;
+        
+        if($request->file('resume1')){
+            if (Storage::disk('local')->exists('Resume/'.$id.'-01.pdf'))
+                Storage::disk('local')->delete('Resume/'.$id.'-01.pdf');
+            $file1 = $request->file('resume1');
+            $filename1 = $id . '-01.' . $file1->getClientOriginalExtension();
+            $path1 = $file1->storeAs('Resume', $filename1);
+            $count = 1;
+        }    
+
+        if($request->file('resume2')){
+            if (Storage::disk('local')->exists('Resume/'.$id.'-02.pdf'))
+                Storage::disk('local')->delete('Resume/'.$id.'-02.pdf');
+            $file2 = $request->file('resume2');
+            $filename2 = $id . '-02.' . $file2->getClientOriginalExtension();
+            $path2 = $file1->storeAs('Resume', $filename2);
+            $count++;
+        }
+
+        if($request->file('resume3')){
+            if (Storage::disk('local')->exists('Resume/'.$id.'-03.pdf'))
+                Storage::disk('local')->delete('Resume/'.$id.'-03.pdf');
+            $file3 = $request->file('resume3');
+            $filename3 = $id . '-03.' . $file3->getClientOriginalExtension();
+            $path3 = $file1->storeAs('Resume', $filename3);
+            $count++;
+        }
+       
+        echo '<script type="text/javascript">alert("'.$count.' File(s) uploaded successfully ")</script>';
+        header("Refresh: 1; url= /user/profile");
+    }
 }

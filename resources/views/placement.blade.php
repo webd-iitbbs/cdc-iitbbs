@@ -21,10 +21,12 @@
 <?php $department = explode('"', $data->department);  ?>       
     @foreach($department as $department)
     @if(substr(Auth::user()->roll, 2, 2) == $department )
-        <div class="container-fluid">
+    @foreach($course as $course)
+    @if(substr(Auth::user()->roll, 4, 2) == $course )
+    <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="bor">
-              <form action="regp" method="get">
+              
                 <div class="row">
                 <div class="col-2 co fir">
                     <img src="{{ $data->logoimage }}" width="100px" height="auto">
@@ -32,7 +34,6 @@
                     <h5><b> {{ $data->company_name }}</b></h5><br>
                     <p class="fi"><i>{{ $data->profile}}</i><br></p>
                     <br>
-
                 </div>
 
                 </div>
@@ -76,19 +77,47 @@
                     $db = \DB::table('fourthyear')->where($result, '=', 1)
                                                  ->where('name', '=', Auth::user()->name)
                                                  ->count();
-                    if(!$db) { ?>
-                        <button class="btn btn-primary btn-sm" type="submit"> Register </button>
-                        <input type="hidden" name="id" value="{{ $data->id }}"/> 
+                    if(!$db) { ?>  
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Register</button>
+                    </div><br>
                     <?php }else { ?>  
                         <a href="#" class="btn btn-primary btn-sm disabled" role="button" aria-disabled="true">Registered</a>
                     <?php } ?>
-                    </div><br>
-                    </form>
+                    
                 </div>
                 
             </div>
+        </div>
+    </div> 
+
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Choose a Resume</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
             </div>
+
+            <div class="modal-body">
+                <form action="regp" method="get">
+                    <select class="custom-select" name="resume" id="inputGroupSelect01" required>
+                        <option value="1" selected>Resume-1</option>
+                        <option value="2">Resume-2</option>
+                        <option value="3">Resume-3</option>
+                    </select>
+                        <br><br>
+                    <input type="submit" class="btn btn-primary" name="submit" value="submit">
+                    <input type="hidden" name="id" value="{{ $data->id }}"/> 
+                </form>    
+            </div>
+            
+        </div>
+    </div>
 </div>
+            @endif
+            @endforeach
             @endif
             @endforeach
         @endforeach

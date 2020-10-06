@@ -10,7 +10,7 @@
     <title>{{ config('app.name', 'CDC IITBBS') }}</title>
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"  ></script>
-
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
     <!-- Fonts -->
     <link rel="shortcut icon" href="{{ URL::to('/') }}/images/favicon.ico">
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -22,7 +22,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ URL::to('/') }}/css/style.css">
     @yield('css')
-    
+        
 </head>
 <body>
     <div id="app" style="background:white;">
@@ -69,6 +69,7 @@
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
+                                    <a class="dropdown-item" href="/user/resume">My Resume </a>
                                     <a class="dropdown-item" href="/user/profile">My Profile </a>
 
                                 </div>
@@ -85,12 +86,12 @@
         <main class="py-4" style="background-color: white;">
             @yield('content')
         </main>
-        <div class="copy-bottom bg-li py-4 border-top">
+        <div class="copy-bottom bg-li py-4 border-top bottom">
 		<div class="container-fluid">
 			<div class="d-md-flex px-md-3 position-relative text-center">
 				<!-- copyright -->
 				<div class="copy_right mx-md-auto mb-md-0 mb-3">
-					<p class="text-bl let">© Developed by Web and Design Society, IIT Bhubaneswar.</p>
+					<p class="text-bl let"> Developed by Web and Design Society, IIT Bhubaneswar.</p>
 				</div>
 				<!-- //copyright -->
 			</div>

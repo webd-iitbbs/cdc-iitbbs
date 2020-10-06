@@ -47,4 +47,6 @@ Route::group(['middleware'=>'auth'],function(){
     Route::get('/internship','HomeController@internship');
     Route::get('/user/profile','HomeController@profile');
     Route::get('/user/profile/update','HomeController@profileupdate');
+    Route::get('/user/resume','HomeController@resume');
+    Route::post('/user/resume/update','HomeController@resumeupdate');
 });

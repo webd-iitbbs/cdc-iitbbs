@@ -18,13 +18,19 @@ class Placement extends Model
             $newColumnName = $data->company_name; 
             Schema::table('fourthyear', function($table) use ($data)
             {
+                $resume = 'resume';
+                $resume = $data->company_name.$resume;
                 $table->string($data->company_name)->default('0');
+                $table->string($resume)->default('0');
             });
         });
 
         static::deleting(function ($data) {
             Schema::table('fourthyear', function($table) use ($data) {
+                $resume = 'resume';
+                $resume = $data->company_name.$resume;
                 $table->dropColumn($data->company_name);
+                $table->dropColumn($resume);
             });
         });
     }

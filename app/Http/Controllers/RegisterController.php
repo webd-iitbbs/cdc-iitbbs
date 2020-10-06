@@ -27,26 +27,34 @@ class RegisterController extends Controller
     public function placement()
     {   
         $id = $_GET['id'];
+
+        $resume = $_GET['resume'];
         
         $result= DB::table('placements')->where('id',$id)->value('company_name');
 
-        DB::update("UPDATE `fourthyear` SET `$result` = '1'");
+        $r = $result.'resume';
+
+        DB::update("UPDATE `fourthyear` SET `$result` = '1', `$r` = '$resume'");
         
         echo "<script> alert('Registered successfully'); </script>";
 
-        header("url=/placement");
+        header("Refresh: 1; url=/placement");
     }
 
     public function internship()
     {   
         $id = $_GET['id'];
+
+        $resume = $_GET['resume'];
         
         $result= DB::table('internships')->where('id',$id)->value('company_name');
 
-        DB::update("UPDATE `thirdyear` SET `$result` = '1'");
+        $r = $result.'resume';
+
+        DB::update("UPDATE `thirdyear` SET `$result` = '1', `$r` = '$resume'");
 
         echo "<script> alert('Registered successfully'); </script>";
 
-        header("url=/internship");
+        header("Refresh: 1; url=/internship");
     }
 }
