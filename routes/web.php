@@ -33,13 +33,8 @@ Route::get('/callback', 'SocialController@callback');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
-    event(new Routing());
     $namespacePrefix = '\\'.config('voyager.controllers.namespace').'\\';
 
-    Route::get('/placements/{id}/list', ['uses' => $namespacePrefix.'CandidateController@placement',   'as' => 'listP']);
-    Route::get('/internships/{id}/list', ['uses' => $namespacePrefix.'CandidateController@internship',   'as' => 'listI']);
-
-    event(new RoutingAfter());
 });
 
 Route::get('/home', 'HomeController@index')->name('home');
