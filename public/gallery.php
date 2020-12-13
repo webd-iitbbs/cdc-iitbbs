@@ -140,6 +140,7 @@
 								<li><a href="http://www.iitbbs.ac.in/cdc/doc/IIT%20BBSR%20Placement%20Brochure%202019-20%20updated-final.pdf" class="drop-text" target="_blank">Placement Brochure</a></li>
 								<li><a href="gallery.php" class="active" style="background-color: transparent;">Gallery</a></li>
 								<li><a href="/redirect">Log in</a></li>
+								<li><a href="/contact.php">Contact</a></li>
 							</ul>
 						</nav>
 					</div>

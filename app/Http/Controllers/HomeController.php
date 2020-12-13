@@ -107,7 +107,7 @@ class HomeController extends Controller
 
         DB::update("UPDATE `users` SET `roll` = '$roll' , `branch` = '$branch' ,`degree` = '$degree' , `gender` = '$gender' ,
         `phone` = '$phone' ,`phone2` = '$phone2', `email2` = '$email2' , `cgpa` = '$cgpa' , `TenthScore` = '$tenth' ,`TwelfthScore` = '$twelfth',
-        `backlogs` = '$backlogs' , `gap` = '$gap' , `address` = '$address' , `address` = '$address'  WHERE `users`.`id` = '$id'");
+        `backlogs` = '$backlogs' , `gap` = '$gap' , `address` = '$address' , `state` = '$state'  WHERE `users`.`id` = '$id'");
         
         if (substr($roll, 0, 2) == '18' && ($degree == 01 || $degree == 02) ){
         DB::table('thirdyear')->insert([

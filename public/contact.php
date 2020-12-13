@@ -5,6 +5,8 @@
 	<title>Career Development Cell : IIT Bhubaneswar : Home</title>
 	<!-- Meta tag Keywords -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="csrf-token" content="{{ csrf_token() }}">
+
 	<meta charset="UTF-8" />
 	<script>
 		addEventListener("load", function () {
@@ -29,8 +31,8 @@
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
 	<!-- Web-Fonts -->
-	<link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=devanagari,latin-ext"
-	 rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=devanagari,latin-ext" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600|Raleway:600,300|Josefin+Slab:400,700,600italic,600,400italic' rel='stylesheet' type='text/css'>
 	<!-- //Web-Fonts -->
 	<!--bootstrap cdn-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -39,12 +41,28 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<!--bootstrap cdn-->
+<style type="text/css">
+	.text-field-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 40px;
+    height: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: #666;
+    font-size: 14px;
+    padding: 0 35px;
+    margin-bottom: 30px;
+    width: 100%;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+</style>
 </head>
 
 <body>
 	<!-- main banner -->
-	<div class="main-top" id="home">
-			<!-- main banner -->
 	<div class="main-top" id="home">
 		<!-- header -->
 		<header>
@@ -54,15 +72,15 @@
 					<div id="logo">
 						<h1><a href="/"><img class="img-fluid" src="images/header.png"></a></h1>
 					</div>
-					<!-- //logo -->
+					<!-- logo -->
 					<!-- nav -->
 					<div class="nav_w3ls">
 						<nav>
 							<label for="drop" class="toggle">Menu</label>
 							<input type="checkbox" id="drop" />
 							<ul class="menu">
-								<li><a href="/">Home</a></li>
-								<li><a href="pandp.php" class="active">Procedure & Policy</a></li>
+								<li><a href="/" >Home</a></li>
+								<li><a href="pandp.php">Procedure & Policy</a></li>
 								<li><a href="facilities.php">Facilities</a></li>
 								<li><a href="hop.php">Highlights of Placement</a></li>
 								<li><a href="fcoordinators.php">Faculty Coordinators</a></li>
@@ -71,64 +89,63 @@
 								<li><a href="http://www.iitbbs.ac.in/cdc/doc/IIT%20BBSR%20Placement%20Brochure%202019-20%20updated-final.pdf" class="drop-text" target="_blank">Placement Brochure</a></li>
 								<li><a href="gallery.php">Gallery</a></li>
 								<li><a href="/redirect">Log in</a></li>
-								<li><a href="/contact.php">Contact</a></li>
+								<li><a href="/contact.php" class="active">Contact</a></li>
 							</ul>
 						</nav>
 					</div>
-					<!-- //nav -->
 				</div>
 			</div>
 		</header>
 		<!-- //header -->
 
-	</div>
-	<!-- //main banner -->
 
-		<!-- banner -->
-		<div class="banner_w3lspvt-2"><br>
-			<ol class="breadcrumb" style="background-color: white;">
-				<li class="breadcrumb-item"><a href="/" class="font-weight-bold">Home</a></li>
-				<li class="breadcrumb-item" aria-current="page">Procedure and Policy</li>
-			</ol><br>
-		</div>
-		<!-- //banner -->
-	</div>
-	<!-- //main banner -->
-
-	<!-- content -->
-	<div class="container" style="line-height: 2;">
-		<div class="page-title text-center">
-          <h2>Procedure and Policy</h2>
+	<!--contactus-->
+   <div id="contact" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="page-title text-center">
+          <h2>Quick Contact</h2>
           <hr class="pg-titl-bdr-btm"></hr>
-	    </div>
-		<ol style="list-style-type: lower-roman;">
-			<li>The Placement Cell, which includes the Professor-In-Charge (PIC), faculty coordinators and student representatives, sends invitation to the companies/organizations along with the relevant information.</li>
-			<li>The interested recruiters fill a Job Notification Form (JNF) containing all the required details about the placement using their online account. They may also send the required information to the PIC at his email address or through post at the Placement office.</li>
-			<li>Any recruiter interested in delivering a Pre-Placement Talk (PPT) may send the request to the PIC along with the relevant details.</li>
-			<li>The JNF is made available to the students online as well as through the notice-boards along with the relevant details.</li>
-			<li>Interested students may apply for the recruitment process of a company to the PIC through online or written applications.</li>
-			<li>The Placement cell, in consultation with the company, allots a particular date to the company for the campus interviews.</li>
-			<li>Companies can go through the resumes of the interested students to shortlist the students depending upon the availability of the opportunities using their online accounts.</li>
-			<li>The recruiters visit the campus at the allotted date(s) to conduct the test(s) and/or interview(s) as per the recruitment process.</li>
-			<li>The recruiters are required to declare the final list of the selected students on the date of interview(s).</li>
-		</ol>
-		<hr>
-		<h4>IMPORTANT NOTE:</h4>
-		<p>The placement cell maintains a complete database of all the students selected by the companies. A student once selected may or may not be allowed to appear in another interview(s) depending upon the placement policy of the Institute. The placement cell reserves the right to amend the placement policy of the Institute, if required.</p>
-		<br><h3> Downloads: </h3>
-		<ul class="list marg">
-			<li><a href="#">JNF</a>&nbsp;(<a target="_blank" href="http://www.iitbbs.ac.in/cdc/doc/JNF-IITBBS.doc">DOC</a> | <a target="_blank" href="http://www.iitbbs.ac.in/cdc/doc/JNF-IITBBS.pdf">PDF</a>)</li>
-			<li><a href="#">INF</a>&nbsp;(<a target="_blank" href="http://www.iitbbs.ac.in/cdc/doc/INF-IITBBS.doc">DOC</a>&nbsp;|&nbsp;<a target="_blank" href="http://www.iitbbs.ac.in/cdc/doc/INF-IITBBS.pdf">PDF</a>)</li>
-		</ul>
-	</div><br><br>
-	
-	<!-- //content -->
-	
+        </div>
+        <div id="sendmessage">Your message has been sent. Thank you!</div>
+        <div id="errormessage"></div>
+
+        <div class="form-sec">
+          <form action="" method="post" role="form" class="contactForm">
+		  @csrf
+            <div class="form-row">
+	            <div class="col-md-4 form-group">
+	              <input type="text" name="name" class="form-control contact-form text-field-box" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+	              <div class="validation"></div>
+	            </div>
+	            <div class="col-md-4 form-group">
+	              <input type="email" class="form-control contact-form text-field-box" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+	              <div class="validation"></div>
+	            </div>
+	            <div class="col-md-4 form-group">
+	              <input type="text" class="form-control contact-form text-field-box" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+	              <div class="validation"></div>
+	            </div>
+            </div>
+            <div class="col-md-12 form-group">
+              <textarea class="form-control contact-form text-field-box" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validation"></div>
+
+              <button class="button-medium" id="contact-submit" type="submit" name="contact">Submit Now</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+	<!--contactus-->
+
 	<!-- slideshow -->
 	<div class="page-title text-center">
       <h2>Top Recruiters</h2>
       <hr class="pg-titl-bdr-btm"></hr>
     </div>
+
 	<div class="container slider align-items-center">
 	  <div class="align-self-center mb-5" style="padding-right:10px;">
 	  	<img class="img-fluid align-self-center" style="max-width:100%; width:auto; height:120px; padding:0; margin:auto; width: 200px;" src="images/adobe.png" width="200px">
@@ -221,6 +238,12 @@
 	</div>
 	<!-- //copyright bottom -->
 	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script type="text/javascript" src="contactform.js"></script>
+	<script type="text/javascript">
+		function pic() {
+			document.getElementById('pic').innerHTML = "<p align='justify' class='mt-4'>Many of our students regularly visit foreign universities/industries to broaden their knowledge and experience. To highlight about student-industry interaction, at the end of 3rd year students from undergraduate engineering streams go for a summer internship as a part of the course curriculum. This summer internship programme helps the industries to harness our talents. Our postgraduate students and research scholars often visit their collaborators (India and abroad) for their research work.</p><p align='justify' class='mt-4'>It is my pleasure to introduce Career Development Cell which looks after the placement activities of the students at IIT Bhubaneswar. We are equipped with the required infrastructure to conduct placement sessions, video conferencing, etc. to organize campus placement activities. We provide all the possible support and guidance to the students for this purpose.</p><p align='justify' class='mt-4'>I invite esteemed organizations to visit our campus for the recruitment. Your visit shall provide a platform to utilize the technical knowledge and motivated young talent of our students establishing a synergetic interface. Besides I also invite the companies to take our third year undergraduate students for summer training/internship.</p><p align='justify' class='mt-4'>For any clarifications/discussions please do feel free to contact me at <b>hod.cdc@iitbbs.ac.in.</b></p>";
+		}
+	</script>
 	<script type="text/javascript">
 	$(document).ready(function(){
       $('.slider').slick({
@@ -233,7 +256,6 @@
 		});
     });
 	</script>
-
 </body>
 
 </html>

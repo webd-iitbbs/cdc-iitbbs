@@ -156,6 +156,8 @@ nav ul li {
     margin: 2px;
     display: inline-block;
     float: left;
+    margin-left:0;
+    margin-right:0;
 }
 
 /* Styling the links */

@@ -4,6 +4,7 @@
 
 <div class="container">
  <form action="/user/profile/update" method="get">
+ @csrf
         <h3>PROFILE</h3><br>
 
         <div class="form-row">
@@ -69,7 +70,7 @@
             @if ((Auth::user()->degree))
                 <input type="text" class="form-control" name="degree" value="{{Auth::user()->degree}}" readonly/>
             @else
-                <select class="custom-select" name="branch" id="inputGroupSelect01" required>
+                <select class="custom-select" name="degree" id="inputGroupSelect01" required>
                     <option value="01" selected> 4 Years, Bachelors Of Technology</option>
                     <option value="02">5 Years, Bachelor and Master Of Technology Dual degree</option>
                 </select>
@@ -146,10 +147,10 @@
         <div class="form-row">
             <label for="backlogs" class="col-12 col-sm-2 col-form-label">No. Of Backlogs</label>
             <div class="col-12 col-sm-4"->
-            @if ((Auth::user()->backlogs))
+            @if ((Auth::user()->phone2))
                 <input type="text" class="form-control" name="backlogs" value="{{Auth::user()->backlogs}}" readonly/>
             @else 
-                <input type="number" class="form-control" name="backlogs" required />
+                <input type="number" min="0" class="form-control" name="backlogs" required />
             @endif
             </div>
         </div><br>
@@ -182,7 +183,7 @@
         <div class="form-row">
             <label for="state" class="col-12 col-sm-2 col-form-label">Home State</label>
             <div class="col-12 col-sm-4"->
-            @if ((Auth::user()->phone2))
+            @if ((Auth::user()->state))
                 <input type="text" class="form-control" name="state" value="{{Auth::user()->state}}" readonly/>
             @else 
                 <input type="text" class="form-control" name="state" required />
