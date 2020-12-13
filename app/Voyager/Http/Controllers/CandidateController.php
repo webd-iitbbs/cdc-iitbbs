@@ -8,7 +8,7 @@ use TCG\Voyager\Facades\Voyager;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
-class CandidateController extends Controller
+class CandidateController extends VoyagerController
 {
     public function placement (Request $request){
         $id = $request->route('id');        ;
