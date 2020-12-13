@@ -1,5 +1,5 @@
 <?php
-namespace App\Http\Controllers;
+namespace TCG\Voyager\Http\Controllers;
 
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;

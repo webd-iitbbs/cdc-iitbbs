@@ -35,8 +35,8 @@ Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
     $namespacePrefix = '\\'.config('voyager.controllers.namespace').'\\';
 
-    Route::get('/placements/{id}/list', ['uses' => 'CandidateController@placement',   'as' => 'listP']);
-    Route::get('/internships/{id}/list', ['uses' => 'CandidateController@internship',   'as' => 'listI']);
+    Route::get('/placements/{id}/list', ['uses' => $namespacePrefix.'CandidateController@placement',   'as' => 'listP']);
+    Route::get('/internships/{id}/list', ['uses' => $namespacePrefix.'CandidateController@internship',   'as' => 'listI']);
 });
 
 Route::get('/home', 'HomeController@index')->name('home');
