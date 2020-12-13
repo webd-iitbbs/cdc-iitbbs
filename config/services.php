@@ -33,7 +33,7 @@ return [
     'google' => [
     'client_id' => '708444869889-3d26evd5tckios2r6bum64vn3ekccke3.apps.googleusercontent.com',
     'client_secret' => 'TTJEhWgouGGLVlFyVkXRDScM',
-    'redirect' => 'http://127.0.0.1:8000/callback',
+    'redirect' => 'https://cdciitbbs.herokuapp.com/callback',
   ], 
 
 ];
